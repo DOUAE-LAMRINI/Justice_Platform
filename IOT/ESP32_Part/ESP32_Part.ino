@@ -7,7 +7,7 @@ const char* ssid = "VIRSUS";
 const char* password = "+010203+";
 
 // Server details
-const char* serverUrl = "http://192.168.137.39:5000/api/iot/data";
+const char* serverUrl = "http://###########:5000/api/iot/data";
 
 // Serial communication with Arduino
 #define SERIAL_RX_BUFFER_SIZE 512
