@@ -46,15 +46,15 @@ wss.on('error', (error) => {
 
 const ALLOWED_ORIGINS = [
   'http://localhost:3000', 
-  'http://192.168.137.39:5000', 
-  'http://192.168.11.161'
+  'http://####:5000', 
+  'http://###########'
 ];
 const MAX_CONNECTIONS_PER_IP = 5;
 const HEARTBEAT_INTERVAL = 30000;
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://192.168.137.39:5000', 'http://192.168.137.182'],
+  origin: ['http://localhost:3000', 'http://######:5000', 'http://########'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
