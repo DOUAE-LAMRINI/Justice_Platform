@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lateef&display=swap");
+
+.citoyen-footer {
+  background-color: rgb(11, 25, 60);
+  color: #f8f9fa;
+  font-family: "Lateef", serif;
+  direction: rtl;
+  padding: 1.5rem 0 1rem;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Logo Section */
+.logo-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.ministry-logo {
+  height: 80px;
+  filter: drop-shadow(3px 3px 5px rgba(78, 1, 1, 0.86))
+    drop-shadow(0 0 10px rgba(74, 144, 226, 0.2));
+  transition: transform 0.3s ease;
+}
+
+.ministry-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Social Media Section */
+.social-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.divider-line {
+  height: 1px;
+  width: 6cm;
+  background: linear-gradient(90deg, transparent, rgb(13, 46, 67), transparent);
+  margin: 0 1.5rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f6bd60;
+  transform: translateY(-3px);
+}
+
+/* Copyright Section */
+.copyright-section {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid #1a2a4a;
+  font-size: 1.2rem;
+  color: #adb5bd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .divider-line {
+    width: 3cm;
+  }
+
+  .ministry-logo {
+    height: 60px;
+  }
+}

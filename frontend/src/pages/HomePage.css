@@ -1,0 +1,315 @@
+@font-face {
+  font-family: "Arabswell";
+  src: url("../assets/fonts/arabswell_1.ttf") format("truetype");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arabswell_1";
+  src: url("../assets/fonts/arabswell.ttf") format("truetype");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --gold-primary: #d4af37;
+  --gold-light: #f5d78e;
+  --gold-lighter: #fff9e6;
+  --gold-dark: #b8951e;
+  --blue-dark: #001233;
+  --white-transparent: rgba(255, 255, 255, 0.95);
+  --white-muted: rgba(255, 255, 255, 0.8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.justice-homepage {
+  font-family: "Arabswell", serif;
+  position: relative;
+  min-height: 100vh;
+  background: url("../assets/images/main_bg_1.png") center/cover no-repeat fixed;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  direction: rtl;
+  overflow: hidden;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.justice-homepage__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(3, 28, 57, 0.9) 0%,
+    rgba(0, 27, 65, 0.64) 100%
+  );
+  z-index: 0;
+}
+
+.justice-homepage__header {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 2.5rem 1rem 1rem;
+  margin: 0;
+}
+
+.justice-homepage__logo {
+  width: 70px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  transition: all 0.3s ease;
+}
+
+.justice-homepage__logo:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
+}
+
+.justice-homepage__sub-title {
+  font-size: 0.7rem;
+  background: linear-gradient(
+    90deg,
+    var(--gold-light),
+    var(--gold-primary),
+    var(--gold-light)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0.25rem 0;
+  font-weight: normal;
+  letter-spacing: 0.3px;
+  padding: 0 0.5rem;
+}
+
+.justice-homepage__main-title {
+  font-family: "Arabswell_1", serif !important;
+  font-size: 3rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  margin: 1rem 0 1.5rem;
+  line-height: 1.3;
+  font-weight: normal;
+  word-spacing: 10px;
+}
+
+.gold-text {
+  background: linear-gradient(
+    90deg,
+    var(--gold-light),
+    var(--gold-primary),
+    var(--gold-light)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  padding: 0 0.2rem;
+}
+
+.white-text {
+  font-family: "Arabswell", serif;
+  color: rgb(211, 210, 210);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.justice-homepage__content {
+  font-family: "Arabswell", serif;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1200px;
+  width: 100%;
+  animation: fadeInUp 1s ease-out;
+}
+
+.justice-homepage__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2.5rem 0 3rem;
+}
+
+.justice-homepage__button {
+  font-family: "Arabswell", serif;
+  padding: 0.6rem 3.5rem;
+  font-size: 1.6rem;
+  color: rgb(211, 210, 210);
+  background: transparent;
+  border: 1px solid rgb(211, 210, 210);
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.1);
+  min-width: 140px;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(4px);
+}
+
+.justice-homepage__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.08),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: 0.6s;
+}
+
+.justice-homepage__button:hover::before {
+  right: 150%;
+}
+
+.justice-homepage__button:hover {
+  color: var(--gold-dark);
+  transform: translateY(-2px);
+  border-color: var(--gold-light);
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.3),
+    0 4px 16px rgba(212, 175, 55, 0.25);
+}
+
+.justice-homepage__button:active {
+  transform: translateY(0);
+}
+
+.justice-homepage__footer {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 1.25rem 1rem;
+  background: rgba(0, 22, 56, 0.6);
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  backdrop-filter: blur(8px);
+  width: 100%;
+}
+
+.footer-text {
+  color: var(--white-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-text p:first-child {
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+  color: var(--white-transparent);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .justice-homepage__main-title {
+    font-size: 2.6rem;
+  }
+
+  .justice-homepage__button {
+    font-size: 1.5rem;
+    padding: 0.9rem 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .justice-homepage__header {
+    padding-top: 2rem;
+  }
+
+  .justice-homepage__main-title {
+    font-size: 2.2rem;
+  }
+
+  .justice-homepage__sub-title {
+    font-size: 0.7rem;
+  }
+
+  .justice-homepage__button {
+    font-size: 1.4rem;
+    padding: 0.8rem 2rem;
+    min-width: 120px;
+  }
+
+  .justice-homepage__logo {
+    width: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .justice-homepage__main-title {
+    font-size: 2rem;
+    margin: 0.5rem 0 1.2rem;
+  }
+
+  .justice-homepage__buttons {
+    gap: 1.5rem;
+    margin: 2rem 0 2.5rem;
+  }
+
+  .justice-homepage__button {
+    font-size: 1.3rem;
+    padding: 0.75rem 1.8rem;
+    min-width: 110px;
+  }
+
+  .justice-homepage__logo {
+    width: 50px;
+  }
+
+  .justice-homepage__sub-title {
+    font-size: 0.7rem;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+  }
+
+  .footer-text p:first-child {
+    font-size: 1rem;
+  }
+}

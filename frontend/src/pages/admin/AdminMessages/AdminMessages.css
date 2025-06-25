@@ -1,0 +1,301 @@
+/* General Styles */
+.dashboard-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .dashboard-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.dashboard-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.dashboard-header p {
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Search Styles */
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 256px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 16px;
+  width: 16px;
+  color: #9ca3af;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 8px 8px 32px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.stat-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+}
+
+.stat-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.stat-header h3 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin: 0;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Tabs Styles */
+.tabs-container {
+  margin-top: 16px;
+}
+
+.tabs-list {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tab-trigger {
+  padding: 8px 16px;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.tab-trigger.active {
+  background-color: #f3f4f6;
+  color: #111827;
+  font-weight: 500;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Message Card Styles */
+.message-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.card-header h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.card-header p {
+  color: #6b7280;
+  margin: 4px 0 0;
+  font-size: 0.875rem;
+}
+
+.card-content {
+  padding: 0;
+}
+
+/* Message List Styles */
+.message-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-item {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #e5e7eb;
+  align-items: flex-start;
+}
+
+.message-item:hover {
+  background-color: #f9fafb;
+}
+
+.message-item.unread {
+  background-color: #f3f4f680;
+  font-weight: 500;
+}
+
+/* Avatar Styles */
+.avatar {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e7eb;
+  color: #111827;
+  font-weight: 500;
+}
+
+/* Message Details Styles */
+.message-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.sender-name {
+  font-weight: 500;
+}
+
+.message-date {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.message-subject {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.message-preview {
+  font-size: 0.875rem;
+  color: #6b7280;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Message Actions */
+.message-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.unread-badge {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button:hover {
+  background-color: #f3f4f6;
+}
+
+.icon {
+  height: 16px;
+  width: 16px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

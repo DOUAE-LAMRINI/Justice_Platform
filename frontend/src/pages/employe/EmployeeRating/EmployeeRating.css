@@ -1,0 +1,229 @@
+/* Font face for Arabswell */
+@font-face {
+  font-family: "Arabswell";
+  src: url("../../../assets/fonts/arabswell.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Modern Arabic typography fallback */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap");
+
+.luxury-rating-container {
+  font-family: "Arabswell", "Noto Naskh Arabic", serif;
+  background: linear-gradient(
+      135deg,
+      rgb(9, 38, 78, 1) 30%,
+      rgb(9, 38, 78, 0.9) 50%,
+      rgba(0, 27, 65, 0.73) 100%
+    ),
+    url("../../../assets/images/main_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.luxury-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 700px;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border: 0px solid rgba(203, 156, 0, 0.3);
+}
+/*
+.luxury-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #d4af37, #f5d07a);
+}*/
+
+.luxury-header h1 {
+  color: rgb(0, 15, 46);
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.luxury-header p {
+  color: #7f8c8d;
+  font-family: Calibri;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.luxury-stars {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 30px 0;
+}
+
+.luxury-star {
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0 5px;
+  line-height: 1;
+}
+
+.luxury-star.active {
+  color: #d4af37;
+  transform: scale(1.1);
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+.luxury-textarea-container {
+  margin: 25px 0;
+  position: relative;
+}
+
+.luxury-textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: "Noto Naskh Arabic", serif;
+  font-size: 1rem;
+  resize: none;
+  transition: all 0.3s;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.luxury-textarea:focus {
+  outline: none;
+  border-color: #d4af37;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.1);
+}
+
+.luxury-submit-btn {
+  background: linear-gradient(to right, rgba(1, 30, 92, 0.66), rgb(0, 10, 55));
+  color: white;
+  border: 0.5px;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+  margin-top: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.luxury-submit-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  color: rgb(218, 218, 218);
+  background: linear-gradient(
+    135deg,
+    rgb(9, 38, 78, 1) 30%,
+    rgba(9, 38, 78, 0.9) 50%,
+    rgba(0, 27, 65, 0.64) 100%
+  );
+  transition: 0.5s;
+}
+
+.luxury-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.luxury-submit-btn:hover::before {
+  left: 100%;
+}
+
+.luxury-submit-btn:disabled {
+  background: rgba(189, 193, 199, 0);
+  transform: none;
+  box-shadow: none;
+  color: rgba(9, 38, 78);
+  cursor: not-allowed;
+  border: 0.5px solid rgba(9, 38, 78);
+}
+
+/* Success state */
+.luxury-success {
+  padding: 20px 0;
+}
+
+.luxury-checkmark {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(to bottom, #d4af37, #f5d07a);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+.luxury-success h2 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.luxury-success p {
+  color: #7f8c8d;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.luxury-reset-btn {
+  background: white;
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.luxury-reset-btn:hover {
+  background: rgba(212, 175, 55, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .luxury-card {
+    padding: 30px 20px;
+  }
+
+  .luxury-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .luxury-star {
+    font-size: 1.8rem;
+  }
+}

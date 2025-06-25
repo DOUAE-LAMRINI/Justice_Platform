@@ -1,0 +1,217 @@
+/* Arabic Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+
+/* Base Styles */
+.employee-footer {
+  background-color: rgb(9, 38, 78);
+  color: #f5f5f5;
+  padding: 3.5rem 0 1.5rem;
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  text-align: right;
+  line-height: 1.8;
+}
+
+.employee-footer-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Grid Layout */
+.employee-footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 992px) {
+  .employee-footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+}
+
+/* Ministry Info Section */
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.ministry-logo {
+  height: 80px;
+  width: auto;
+}
+
+.logo-badge {
+  display: flex;
+  flex-direction: column;
+  border-right: 3px solid #d4af37; /* Gold */
+  padding-right: 1rem;
+}
+
+.logo-badge span {
+  font-weight: 700;
+  color: #fff;
+}
+
+.logo-badge span:first-child {
+  font-size: 1.25rem;
+}
+
+.logo-badge span:last-child {
+  font-size: 0.9rem;
+  color: #d4af37; /* Gold */
+}
+
+.ministry-description p {
+  color: #d1d5db;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 0.95rem;
+  line-height: 2;
+  margin: 0;
+  padding-left: 1rem;
+  border-left: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Links Section */
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.75rem;
+  color: #ffffff !important;
+  position: relative;
+}
+
+.title-underline {
+  padding-bottom: 0.5rem;
+}
+
+/*.title-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 2px;
+  background-color: #d4af37; 
+}*/
+
+.footer-links-arabic {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer-link {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.link-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.link-icon {
+  color: #d4af37; /* Gold */
+  font-size: 1.1rem;
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.footer-link:hover .link-icon {
+  transform: rotate(180deg) translateX(5px);
+}
+
+/* Contact Section */
+.contact-info-arabic {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  color: #d1d5db;
+}
+
+.contact-icon {
+  color: #d4af37; /* Gold */
+  min-width: 24px;
+  margin-top: 2px;
+}
+
+/* Copyright Section */
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 175, 55, 0.5),
+    transparent
+  );
+  margin: 2rem 0;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: rgb(128, 148, 183);
+  font-size: 0.85rem;
+  position: relative;
+}
+
+.footer-copyright p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.ministry-seal {
+  margin-top: 1rem;
+}
+
+.ministry-seal img {
+  height: 60px;
+  opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .employee-footer {
+    padding: 2.5rem 1.5rem 1.5rem;
+  }
+
+  .logo-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .ministry-description p {
+    padding-left: 0;
+    border-left: none;
+    padding-right: 0.5rem;
+  }
+}

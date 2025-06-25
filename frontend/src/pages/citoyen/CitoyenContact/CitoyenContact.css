@@ -1,0 +1,478 @@
+/* ============ FONTS ============ */
+@font-face {
+  font-family: "Arabswell";
+  src: url("../../../assets/fonts/arabswell.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* ============ BASE STYLES ============ */
+.citoyen-contact-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  font-family: "Arial", sans-serif;
+  direction: rtl;
+  background-color: #f8fafc;
+}
+
+.citoyen-contact-title {
+  font-family: "Arabswell", sans-serif;
+  font-size: 3rem;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1a3a8a;
+  letter-spacing: 1px;
+}
+
+.citoyen-contact-subtitle {
+  text-align: center;
+  color: #4a5568;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============ TABS ============ */
+.citoyen-contact-tabs {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border: 1px solid #e2e8f0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.citoyen-tab-buttons {
+  display: flex;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.citoyen-tab-button {
+  flex: 1;
+  padding: 1.25rem;
+  text-align: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #4a5568;
+  transition: all 0.2s;
+  font-size: 1.05rem;
+}
+
+.citoyen-tab-button.citoyen-tab-active {
+  color: #1e4b8b;
+  border-bottom: 3px solid #1e4b8b;
+}
+
+.citoyen-tab-button:hover {
+  background-color: #f1f5f9;
+}
+
+.citoyen-tab-content {
+  display: none;
+  padding: 2.5rem;
+}
+
+.citoyen-tab-content.citoyen-tab-show {
+  display: block;
+}
+
+/* ============ FORM STYLES ============ */
+.citoyen-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.citoyen-form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .citoyen-form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.citoyen-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.citoyen-form-group label {
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 0.95rem;
+}
+
+.citoyen-form-group input,
+.citoyen-form-textarea {
+  padding: 0.9rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  transition: all 0.2s;
+  font-family: "Arial", sans-serif;
+  background-color: #f9fafb;
+}
+
+.citoyen-form-group input:focus,
+.citoyen-form-textarea:focus {
+  outline: none;
+  border-color: #1e4b8b;
+  box-shadow: 0 0 0 2px rgba(30, 75, 139, 0.1);
+  background-color: white;
+}
+
+.citoyen-form-textarea {
+  min-height: 180px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.citoyen-error-message {
+  color: #e53e3e;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.citoyen-form-description {
+  color: #64748b;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  line-height: 1.5;
+}
+
+.citoyen-fieldset {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.4rem;
+  padding: 1.25rem;
+  background-color: #f9fafb;
+}
+
+.citoyen-fieldset legend {
+  font-weight: 600;
+  color: #2d3748;
+  padding: 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+.citoyen-radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 0.75rem;
+}
+
+.citoyen-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.citoyen-radio-input {
+  margin-left: 0.5rem;
+  accent-color: #1e4b8b;
+}
+
+.citoyen-form-notice {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.4rem;
+  padding: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.citoyen-form-notice h4 {
+  font-weight: 600;
+  color: #1e4b8b;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.citoyen-form-notice p {
+  color: #475569;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.citoyen-notice-icon {
+  color: #1e4b8b;
+}
+
+.citoyen-form-submit {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.citoyen-submit-button {
+  background-color: #1e4b8b;
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.citoyen-submit-button:hover {
+  background-color: #1a3f75;
+}
+
+.citoyen-submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.citoyen-spinner {
+  animation: citoyen-spin 1s linear infinite;
+}
+
+@keyframes citoyen-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ============ SUCCESS MESSAGE ============ */
+.citoyen-success-message {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 0.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  color: #166534;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.citoyen-success-message h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.citoyen-success-message p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.citoyen-success-icon {
+  font-size: 3rem;
+  color: #16a34a;
+  margin-bottom: 1.5rem;
+}
+
+.citoyen-reset-button {
+  background-color: white;
+  border: 1px solid #1e4b8b;
+  color: #1e4b8b;
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.citoyen-reset-button:hover {
+  background-color: #f1f5f9;
+}
+
+/* ============ CONTACT INFO ============ */
+.citoyen-contact-info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  margin-bottom: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .citoyen-contact-info-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.citoyen-info-card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+}
+
+.citoyen-info-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 auto 1.5rem;
+  background-color: #eff6ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e4b8b;
+  font-size: 1.5rem;
+}
+
+.citoyen-info-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: #1e3a8a;
+}
+
+.citoyen-info-content {
+  text-align: right;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.citoyen-info-content p {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+/* ============ MAP SECTION ============ */
+.citoyen-map-container {
+  margin-bottom: 2.5rem;
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.citoyen-map-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.citoyen-map-placeholder {
+  height: 400px;
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  z-index: 1;
+}
+
+/* Leaflet map adjustments */
+.leaflet-container {
+  font-family: "Arial", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-popup-content {
+  text-align: right;
+  direction: rtl;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0.3rem;
+}
+
+/* ============ ADDITIONAL INFO ============ */
+.citoyen-additional-info {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: right;
+  color: #475569;
+  line-height: 1.7;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.citoyen-additional-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.citoyen-additional-text {
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+}
+
+/* ============ SERVER ERROR ============ */
+.citoyen-server-error {
+  background-color: #fef2f2;
+  border: 1px solid #fee2e2;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* ============ RESPONSIVE ADJUSTMENTS ============ */
+@media (max-width: 1024px) {
+  .citoyen-contact-container {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .citoyen-tab-content {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .citoyen-contact-title {
+    font-size: 2.2rem;
+  }
+  
+  .citoyen-tab-content {
+    padding: 1.75rem;
+  }
+  
+  .citoyen-contact-form {
+    gap: 1.5rem;
+  }
+  
+  .citoyen-info-card {
+    padding: 1.75rem;
+  }
+}

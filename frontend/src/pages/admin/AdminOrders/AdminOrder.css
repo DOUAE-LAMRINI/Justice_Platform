@@ -1,0 +1,177 @@
+/* Main Container Styles */
+.admin-order-container {
+  padding: 24px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.admin-order-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title Styles */
+.admin-order-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+/* Statistics Cards */
+.statistics-row {
+  margin-bottom: 1.5rem;
+}
+
+.statistics-card {
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.statistics-card .ant-statistic-title {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.statistics-card .ant-statistic-content {
+  font-size: 1.5rem;
+}
+
+/* Order Table Card */
+.order-table-card {
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.order-table-card .ant-card-head {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.order-table-card .ant-card-head-title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding: 12px 0;
+}
+
+/* Table Styles */
+.custom-table {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.custom-table .ant-table-thead > tr > th {
+  font-weight: 600;
+  background-color: #f3f4f6 !important;
+  color: #374151;
+}
+
+.custom-table .ant-table-tbody > tr > td {
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+.custom-table .ant-table-row:hover td {
+  background-color: #f9fafb !important;
+}
+
+/* Modal Styles */
+.order-details-modal .ant-modal-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.order-details-modal .ant-modal-body {
+  padding: 24px;
+}
+
+/* Order Details Cards */
+.order-details-card {
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.order-details-card:last-child {
+  margin-bottom: 0;
+}
+
+.order-details-card .ant-card-head {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.order-details-card .ant-card-head-title {
+  font-weight: 600;
+}
+
+/* Descriptions Styles */
+.order-details-card .ant-descriptions-bordered .ant-descriptions-item-label {
+  background-color: #f3f4f6;
+  font-weight: 500;
+  width: 200px;
+}
+
+.order-details-card .ant-descriptions-bordered .ant-descriptions-item-content {
+  padding: 12px 24px;
+}
+
+/* Rejection Reason Styles */
+.rejection-reason {
+  background-color: #fef2f2;
+  padding: 12px;
+  border-left: 4px solid #ef4444;
+  border-radius: 4px;
+}
+
+.rejection-reason-text {
+  color: #dc2626;
+  margin: 0;
+}
+
+/* Text Styles */
+.text-gray-700 {
+  color: #374151;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+.no-notes-text {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+/* Button Styles */
+.flex.items-center {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Tag Styles */
+.ant-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .statistics-row .ant-col {
+    margin-bottom: 16px;
+  }
+  
+  .statistics-row .ant-col:last-child {
+    margin-bottom: 0;
+  }
+  
+  .order-details-modal {
+    width: 95% !important;
+    max-width: 100%;
+  }
+  
+  .order-details-card .ant-descriptions-bordered .ant-descriptions-item-label {
+    width: 150px;
+  }
+}

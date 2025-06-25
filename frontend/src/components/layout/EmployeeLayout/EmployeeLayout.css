@@ -1,0 +1,35 @@
+/* Main layout container */
+.employee-layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f9f9f9; /* optional */
+}
+
+/* Content area */
+.employee-layout-content {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #fff; /* optional */
+}
+
+/* Loading state */
+.employee-layout-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  background-color: #fdfdfd; /* optional */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .employee-layout-content {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "adminLogin": {
+    "title": "Admin Dashboard",
+    "subtitle": "Enter your credentials to access the dashboard",
+    "username": "Username",
+    "password": "Password",
+    "language": "Language",
+    "login": "Login",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "poweredBy": "Powered by Morocco Ministry App v10"
+  }
+}

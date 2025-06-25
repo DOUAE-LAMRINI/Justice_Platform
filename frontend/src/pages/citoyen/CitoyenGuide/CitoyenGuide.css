@@ -1,0 +1,426 @@
+/* ===== Font Faces ===== */
+@font-face {
+  font-family: "Arabswell";
+  src: url("../../../assets/fonts/arabswell.ttf") format("truetype");
+}
+
+/* ===== Base Styles ===== */
+.justice-guide-container {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Hero Section ===== */
+.justice-guide-hero {
+  background: #0a2e5a;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
+
+.justice-guide-title {
+  font-family: "Arabswell", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.justice-guide-subtitle {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ===== Tabs Navigation ===== */
+.justice-guide-tabs {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 1200px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  margin-top: -30px;
+  position: relative;
+  z-index: 1;
+}
+
+.justice-guide-tab {
+  padding: 15px 25px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.justice-guide-tab:hover {
+  background: #f1f1f1;
+}
+
+.justice-guide-tab.active {
+  background: #0a2e5a;
+  color: white;
+}
+
+/* ===== Main Content ===== */
+.justice-guide-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background: #fff;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 0 0 8px 8px;
+}
+
+.justice-tab-content {
+  display: none;
+}
+
+.justice-tab-content.active {
+  display: block;
+}
+
+/* ===== Section Header ===== */
+.justice-section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.justice-section-title {
+  font-size: 1.8rem;
+  color: #0a2e5a;
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.justice-section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 80px;
+  height: 3px;
+  background: #0a2e5a;
+}
+
+.justice-section-description {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.justice-section-subtitle {
+  color: #0a2e5a;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* ===== About Section ===== */
+.justice-mission-content {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.justice-mission-content p {
+  margin-bottom: 15px;
+}
+
+.justice-objectives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.justice-objective-card {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  border-top: 3px solid #0a2e5a;
+}
+
+.justice-objective-card h4 {
+  color: #0a2e5a;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.justice-objective-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.justice-audience-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.justice-audience-card {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  border-left: 3px solid #0a2e5a;
+}
+
+.justice-audience-card h4 {
+  color: #0a2e5a;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.justice-audience-card p {
+  color: #555;
+  line-height: 1.8;
+}
+
+/* ===== Features Section ===== */
+.justice-features-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.justice-feature {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  border-right: 4px solid #0a2e5a;
+}
+
+.justice-feature-title {
+  color: #0a2e5a;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.justice-feature-description {
+  color: #444;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+.justice-feature-list {
+  padding-right: 20px;
+}
+
+.justice-feature-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-right: 15px;
+}
+
+.justice-feature-list li::before {
+  content: "•";
+  position: absolute;
+  right: 0;
+  color: #0a2e5a;
+}
+
+/* ===== Usage Section ===== */
+.justice-usage-section {
+  margin: 50px 0;
+}
+
+.justice-usage-process {
+  margin-bottom: 50px;
+}
+
+.justice-usage-title {
+  color: #0a2e5a;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.justice-usage-steps {
+  display: grid;
+  gap: 30px;
+}
+
+.justice-usage-step {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  border-right: 3px solid #0a2e5a;
+}
+
+.justice-step-title {
+  color: #0a2e5a;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.justice-step-description {
+  color: #444;
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.justice-step-options {
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+.justice-step-options li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-right: 15px;
+}
+
+.justice-step-options li::before {
+  content: "-";
+  position: absolute;
+  right: 0;
+  color: #0a2e5a;
+}
+
+.justice-usage-note {
+  background: #f0f4f8;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-style: italic;
+  color: #555;
+}
+
+/* ===== FAQ Section ===== */
+.justice-faq-item {
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.justice-faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.justice-faq-question h3 {
+  font-size: 1.2rem;
+  color: #0a2e5a;
+}
+
+.justice-faq-toggle {
+  font-size: 1.5rem;
+  color: #0a2e5a;
+}
+
+.justice-faq-answer {
+  padding-top: 15px;
+  color: #555;
+}
+
+/* ===== Contact Promo ===== */
+.justice-contact-promo {
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.justice-contact-button {
+  background: #0a2e5a;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.justice-contact-button:hover {
+  background: #08305e;
+}
+
+/* ===== Help Section ===== */
+.justice-help-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #0a2e5a;
+  color: white;
+  margin-top: 50px;
+}
+
+.justice-help-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.justice-help-section p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+}
+
+.justice-primary-button {
+  background: white;
+  color: #0a2e5a;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.justice-primary-button:hover {
+  background: #f1f1f1;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .justice-guide-title {
+    font-size: 2rem;
+  }
+  
+  .justice-guide-tabs {
+    flex-wrap: wrap;
+  }
+  
+  .justice-guide-tab {
+    flex: 1 0 auto;
+  }
+  
+  .justice-features-section,
+  .justice-objectives-grid,
+  .justice-audience-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .justice-usage-step {
+    padding: 20px;
+  }
+  
+  .justice-feature,
+  .justice-objective-card,
+  .justice-audience-card {
+    padding: 25px;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "adminLogin": {
+    "title": "Tableau de Bord Admin",
+    "subtitle": "Entrez vos identifiants pour accéder au tableau de bord",
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "language": "Langue",
+    "login": "Connexion",
+    "showPassword": "Afficher le mot de passe",
+    "hidePassword": "Masquer le mot de passe",
+    "poweredBy": "Propulsé par l'Application du Ministère du Maroc v10"
+  }
+}

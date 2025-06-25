@@ -1,0 +1,18 @@
+# Ignorer les dépendances Node.js
+node_modules/
+
+# Fichiers de config de l'éditeur
+.vscode/
+
+# Archives et binaires
+#*.zip
+*.rar
+*.exe
+
+# Fichiers temporaires
+*.log
+*.tmp
+
+# Systèmes d’exploitation
+.DS_Store
+Thumbs.db

@@ -1,0 +1,370 @@
+/* ===== Font Faces ===== */
+@font-face {
+  font-family: "Arabswell";
+  src: url("../../../assets/fonts/arabswell.ttf") format("truetype");
+}
+
+/* ===== Base Styles ===== */
+.employee-guide-container {
+  font-family: "Calibri", sans-serif;
+  direction: rtl;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+/* ===== Hero Header ===== */
+.hero-header {
+  background: linear-gradient(
+      135deg,
+      rgb(9, 38, 78, 1) 30%,
+      rgba(9, 38, 78, 0.9) 50%,
+      rgba(0, 27, 65, 0.64) 100%
+    ),
+    url("../../../assets/images/main_bg_1.png") center/cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-family: "Arabswell", sans-serif;
+  letter-spacing: 2px;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* ===== Main Content Wrapper ===== */
+.main-content-wrapper {
+  max-width: 1200px;
+  margin: -40px auto 0;
+  padding: 0 20px;
+}
+
+/* ===== Modern Tabs ===== */
+.modern-tabs {
+  margin-bottom: 30px;
+}
+
+.tab-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tab-button {
+  padding: 15px 25px;
+  background: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4a5568;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.tab-button:hover {
+  background: #f1f5f9;
+  transform: translateY(-3px);
+}
+
+.tab-button.active {
+  background: #1a365d;
+  color: white;
+  box-shadow: 0 4px 15px rgba(26, 54, 93, 0.2);
+}
+
+.tab-button.active .tab-icon {
+  color: #c5a357;
+}
+
+.tab-icon {
+  display: flex;
+  align-items: center;
+}
+
+/* ===== Tab Content Container ===== */
+.tab-content-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+/* ===== Centered Sections ===== */
+.centered-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.centered-title {
+  font-size: 1.8rem;
+  color: #1a365d;
+  margin-bottom: 15px;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+
+.centered-title::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: 50%;
+  transform: translateX(50%);
+  width: 80px;
+  height: 3px;
+  background: #c5a357;
+}
+
+.centered-subtitle {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-bottom: 30px;
+}
+
+.centered-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a5568;
+}
+
+/* ===== Features Grid ===== */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.feature-card {
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: #c5a357;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  color: #1a365d;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.feature-card p {
+  color: #718096;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* ===== Usage Sections ===== */
+.section-with-title {
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #1a365d;
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: 50%;
+  transform: translateX(50%);
+  width: 100px;
+  height: 3px;
+  background: #c5a357;
+}
+
+.side-by-side-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.step-card {
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 25px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.step-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.step-number {
+  background: #1a365d;
+  color: white;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.step-content {
+  text-align: right;
+}
+
+.step-content h4 {
+  font-size: 1.2rem;
+  color: #1a365d;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.step-content p {
+  color: #718096;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* ===== FAQ Section ===== */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a365d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+  background: #f8fafc;
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+  color: #c5a357;
+}
+
+.faq-item.open .chevron {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  color: #4a5568;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 20px;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 500px;
+  padding: 0 20px 20px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .tab-buttons-container {
+    flex-direction: column;
+  }
+
+  .tab-button {
+    width: 100%;
+  }
+
+  .tab-content-container {
+    padding: 25px;
+  }
+
+  .side-by-side-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .centered-title {
+    font-size: 1.6rem;
+  }
+}

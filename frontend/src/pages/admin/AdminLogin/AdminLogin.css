@@ -1,0 +1,204 @@
+/* Base Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Character Rain Animation */
+.raining-characters {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.raining-characters span {
+  position: absolute;
+  color: #888;
+  font-size: 14px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+/* Login Card */
+.login-card {
+  width: 450px;
+  background: rgb(24, 24, 24);
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #555;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.4);
+  z-index: 1;
+  direction: ltr;
+}
+
+.login-card.rtl {
+  direction: rtl;
+}
+
+/* Header */
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lock-icon {
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.login-header h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 0 5px 0;
+}
+
+.login-header p {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Form Elements */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background: #333;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #888;
+}
+
+/* Password Input */
+.password-input {
+  position: relative;
+}
+
+.password-input button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.login-card.ltr .password-input button {
+  right: 10px;
+}
+
+.login-card.rtl .password-input button {
+  left: 10px;
+}
+
+/* Language Tabs */
+.language-tabs {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.language-tabs button {
+  flex: 1;
+  padding: 8px;
+  background: #444;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.language-tabs button.active {
+  background: #888;
+  color: #000;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background: #888;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #aaa;
+}
+
+/* Footer */
+.login-footer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.7rem;
+  color: #888;
+}
+.error-message, .blocked-message {
+  background-color: #ffebee;
+  color: #d32f2f;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.error-message svg, .blocked-message svg {
+  flex-shrink: 0;
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255,255,255,.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

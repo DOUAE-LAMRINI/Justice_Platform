@@ -1,0 +1,50 @@
+:root {
+  --sidebar-width: 240px;
+  --sidebar-collapsed-width: 70px;
+  --header-height: 60px;
+  --primary-color: #3a36db;
+  --danger-color: #e74c3c;
+  --text-color: #2d3748;
+  --light-text: #718096;
+  --border-color: #e2e8f0;
+  --hover-bg: #edf2f7;
+  --bg-color: #ffffff;
+  --content-padding: 1.5rem;
+  --text-padding: 0.5rem;
+}
+
+.dark-mode {
+  --primary-color: #6c63ff;
+  --danger-color: #ff6b6b;
+  --text-color: #f8f9fa;
+  --light-text: #adb5bd;
+  --border-color: #495057;
+  --hover-bg: #343a40;
+  --bg-color: #212529;
+}
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.admin-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--sidebar-width);
+  transition: margin-left 0.3s ease;
+}
+
+.admin-layout .sidebar.collapsed ~ .admin-main {
+  margin-left: var(--sidebar-collapsed-width);
+}
+
+.admin-content {
+  flex: 1;
+  padding: var(--content-padding);
+  overflow-y: auto;
+  height: calc(100vh - var(--header-height));
+}
