@@ -1,8 +1,8 @@
 # 🔐 Smart Justice – Système Intelligent de Sécurisation de Stock
 
 ## 🎓 Projet de fin de formation – Génie Informatique Embarquée  
-**Établissement d’accueil :** Direction Régionale du Ministère de la Justice OUJDA 
-**Encadrant :** Monsieur Khalid Salhi  
+- **Établissement d’accueil :** Direction Régionale du Ministère de la Justice OUJDA
+- **Encadrant :** Monsieur Khalid Salhi  
 
 ---
 
@@ -106,7 +106,7 @@ Je tiens à remercier chaleureusement **Monsieur Khalid Salhi** pour son encadre
 Je remercie également la **Direction Régionale du Ministère de la Justice OUJDA** pour m’avoir accueilli dans le cadre de mon stage et permis de travailler sur un projet aussi enrichissant, tant sur le plan technique que professionnel.
 
 ---
-        **Douae Lamrini**  
+## ​​🎓​ Douae LAMRINI
 ---
 
 🎯 **Projet réalisé dans le cadre de stage de fin d’études à l'École Supérieure de Technologie d’Oujda (ESTO).**
